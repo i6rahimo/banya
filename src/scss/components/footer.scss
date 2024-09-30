@@ -1,0 +1,146 @@
+.footer {
+  padding: rem(20) 0;
+  background: var(--black-color);
+
+  // .footer__container
+  &__container {
+    // display: flex;
+    // align-items: center;
+
+    @include media-mx(510) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer__title {
+  margin: 0 0 43px;
+}
+.footer__subtitle {
+  font-size: 20px;
+  line-height: 127%;
+}
+.footer__number {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  a {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  button {
+    font-size: 14px;
+    text-decoration: underline;
+
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+.footer__gmail {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.footer__line {
+  width: 373px;
+  height: 1px;
+  background-color: #000;
+  opacity: .3;
+  margin: 8px 0;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  &-t {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #3283CE;
+  }
+  &-w {
+    color: #24BC45;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+}
+.footer__left span{
+  font-size: 14px;
+  opacity: .4;
+}
+.footer__logo {
+  width: 88px;
+  height: 80px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__down {
+  background-color: #F7F7F7;
+  padding: 19px 0 27px;
+  &-item {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    img {
+    }
+  }
+}
+
+.footer__down__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer__logo-maps {
+  display: none;
+}
+@include media-mx(1040) {
+  .footer__map-header {
+    flex-wrap: wrap;
+    gap: 12px !important;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__logo-maps {
+    display: flex;
+  }
+}
+@include media-mx(640) {
+  .footer__map-item {
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .footer__line {
+    display: none;
+  }
+}

@@ -1,0 +1,160 @@
+.swiper {
+  width: 100%;
+  overflow: visible;
+  margin: 25px 0 0;
+  background-color: #EFEFEF;
+  border-radius: 40px;
+  position: relative;
+}
+.swiper-slide-active {
+  transition: all .3 ease;
+  opacity: 1;
+}
+.swiper-slide-next {
+  opacity: 0;
+  transition: all .3 ease;
+}
+.swiper-slide-prev {
+  opacity: 0;
+  transition: all .3 ease;
+
+}
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 21px;
+}
+
+.main__title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.main__subtitle {
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+.main__text {
+  width: 480px;
+  padding: 37px 0 37px 77px;
+}
+
+.main__img {
+  width: 554px;
+  height: 374px;
+}
+.main__img img{
+  max-width: 100%;
+}
+
+.btn {
+  background-color: #FFC60A;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 20px 28px;
+  border-radius: 10px;
+  box-shadow: 0 4px 9.1px 4px rgba(253 188 17 / .44);;
+}
+
+.main {
+  margin: 0 auto 112px;
+}
+
+.main__about-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.main__about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.main__about-item img {
+  margin: 13px 0 0;
+}
+
+.main__about-text {
+  background-color: #F9FAFF;
+  padding: 10px;
+  border-radius: 10px;
+}
+.main__about-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.main__about-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0 0;
+  line-height: 150%;
+}
+.main__about {
+  margin: 0 auto 94px;
+}
+@include media-mx(950) {
+  .main__about-items {
+    flex-wrap: wrap;
+  }
+
+  .main__text {
+    padding: 22px 30px 0 42px;
+  }
+
+}
+
+@include media-mx(860) {
+  .swiper-slide {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .main__title {
+    font-size: 22px;
+  }
+  .main__img {
+    height: auto;
+  }
+  .main__btn {
+    font-size: 12px;
+    padding: 9px 12px;
+  }
+  .main {
+    margin: 0 auto 50px;
+  }
+  .main__about {
+    margin: 0 auto 50px;
+  }
+}
+@include media-mx(640) {
+  .main__about-text {
+    background-color: #fff;
+  }
+  .swiper-main-prev, .swiper-main-next {
+    top: 50%;
+    z-index: 1;
+  }
+  .swiper-main-prev {
+    left: 0;
+    margin-left: 0;
+  }
+  .swiper-main-next {
+    right: 0;
+  }
+  .main__text  {
+    width: 213px;
+    padding: 0 0 27px 0;
+  }
+
+}

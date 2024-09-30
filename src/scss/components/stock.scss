@@ -1,0 +1,123 @@
+.stock__item {
+    padding: 32px 43px 36px 48px;
+    display: flex;
+    background-color: #FAF3E1;
+    border-radius: 40px;
+    gap: 50px;
+}
+
+.stock  {
+    background-color: #EFEFEF;
+    padding: 40px 0 60px;
+    margin: 0 0 112px;
+}
+.stock__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 310px;
+    max-width: 100%;
+}
+.stock__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 110%;
+}
+.stock__subtitle {
+    font-size: 16px;
+    opacity: .5;
+    max-width: 100%;
+    line-height: 150%;
+}
+.stock__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.stock__btn img {
+    width: 43px;
+    height: 43px;
+}
+.stock__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 32px 0 0;
+}
+
+.stock__down {
+    margin: 0 0 110px;
+}
+.stock__down-item {
+    background-color: #FFC60A;
+    padding: 0 76px 0 98px;
+    justify-content: space-between;
+    width: 958px;
+    max-width: 100%;
+    margin: auto;
+}
+.stock__down-text {
+    padding: 32px 0 36px;
+}
+
+.stock__down-title {
+    color: #CE1B1B;
+    margin: 0 0 32px;
+}
+.stock__item-star {
+    display: none;
+}
+@include media-mx(820) {
+    .stock__item {
+        flex-wrap: wrap;
+    }
+    .stock__down .stock__img {
+        width: 100%;
+    }
+    .stock__down .stock__img img {
+        width: 100%;
+    }
+    .stock, .stock__down {
+        margin: 0 auto 50px;
+    }
+}
+@include media-mx(640) {
+    .stock__down-item {
+        padding: 0; 
+    }
+    .stock__down-text {
+        padding: 20px 16px 21px;
+    }
+    .stock__item {
+        gap: 0;
+    }
+    .stock__down .stock__btn {
+        background-color: #fff;
+        padding: 12px 14px;
+        border-radius: 12px;
+        width: max-content;
+    }
+    .stock .stock__img {
+        display: none;
+    }
+    .stock__item-star {
+        display: flex;
+    }
+    .stock__subtitle span {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .stock__item {
+        padding: 19px 10px;
+    }
+    .stock__text {
+        width: auto;
+    }
+    .stock__items {
+        margin: 25px 0 0;
+    }
+}

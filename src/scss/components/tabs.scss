@@ -1,0 +1,41 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+
+  // .tabs__nav
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  // .tabs__trigger
+  &__trigger {
+    padding: 16px 43px;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 127%;
+    background-color: #F7F7F7;
+    &.active {
+      background-color: #FFC60A;
+      color: #000;
+    }
+  }
+
+  // .tabs__content
+  &__content {
+  }
+
+  // .tabs__panel
+  &__panel {
+    animation: fade-up-big 0.4s forwards;
+    display: none;
+    
+    &.active {
+      display: flex;
+    }
+  }
+}
+
